@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("../../fonts/ProximaNovaFont.otf");
+}
+
+:root {
+  font-family: "Proxima", "Arial";
+
+  --primary: rgba(254, 44, 85, 1);
+  --black: #000000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}

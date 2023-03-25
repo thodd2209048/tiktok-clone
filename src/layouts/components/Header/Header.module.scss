@@ -1,0 +1,111 @@
+.wrapper {
+  --search-height: 46px;
+  --search-button-width: 52px;
+  --search-button-font-size: 1.8rem;
+
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+.inner {
+  padding: 0 20px;
+  width: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+.logo {
+  width: 300px;
+
+  img {
+    width: 118px;
+    height: 42px;
+  }
+}
+
+.search,
+.search-result {
+  width: 337px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: var(--search-height);
+  margin: 0 8px;
+  padding-left: 12px;
+  border-radius: 999px;
+  background: rgba(22, 24, 35, 0.06);
+
+  input {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    caret-color: var(--primary);
+
+    &:not(:placeholder-shown) ~ .search-btn {
+      color: rgba(22, 24, 35, 0.75);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: var(--search-button-width);
+    width: 1px;
+    height: calc(var(--search-height) * 0.6);
+    background-color: rgba(22, 24, 35, 0.12);
+  }
+}
+.clear,
+.loading {
+  position: absolute;
+  right: calc(
+    var(--search-button-width) * 1.5 - var(--search-button-font-size) * 0.5
+  );
+  color: rgba(22, 24, 35, 0.34);
+}
+
+.search-btn {
+  width: var(--search-button-width);
+  height: 100%;
+  color: rgba(22, 24, 35, 0.34);
+  background-color: transparent;
+  border-bottom-right-radius: 999px;
+  border-top-right-radius: 999px;
+  font-size: var(--search-button-font-size);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+
+  &:active {
+    background-color: rgba(22, 24, 35, 0.06);
+  }
+}
+.actions {
+  display: inline-flex;
+}
+
+.search-result {
+  margin-top: 8px;
+  padding-top: 8px;
+  max-height: min((100vh - 96px) - 60px, 734px);
+  overflow: hidden auto;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+}
+
+.search-title {
+  height: 30px;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(22, 24, 35, 0.5);
+}
