@@ -20,8 +20,9 @@
 
 .primary {
   min-width: 100px;
-  padding: 6px 16px;
+  padding: 4px 16px;
   font-size: 1.6rem;
+  line-height: 2.2rem;
   color: var(--white);
   border-color: var(--primary);
   border-radius: 4px;
@@ -31,12 +32,18 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
       #fe2c55;
   }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+      #fe2c55;
+  }
 }
 
 .outlineBlack {
   min-width: 110px;
-  padding: 0 16px;
+  padding: 4px 16px;
   font-size: 1.6rem;
+  line-height: 2.2rem;
   color: var(--black);
   border-radius: 2px;
   border-color: rgba(22, 24, 35, 0.12);
@@ -46,8 +53,56 @@
   }
 }
 
+.outlineRed {
+  min-height: 28px;
+  padding: 0 10px;
+  color: rgb(254, 44, 85);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border-color: rgb(254, 44, 85);
+  background-color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: rgba(254, 44, 85, 0.06);
+  }
+
+  &:active {
+    background-color: rgba(254, 44, 85, 0.16);
+  }
+}
+
+.roundBlack {
+  color: rgba(22, 24, 35, 0.75);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0 8px;
+  min-width: 90px;
+  height: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 999px;
+  border-color: rgba(22, 24, 35, 0.12);
+  background-color: rgba(255, 255, 255, 1);
+
+  &:hover {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: rgba(22, 24, 35, 0.06);
+  }
+}
+
 //button and icon
 .icon + .title,
 .title + .icon {
   margin-left: 8px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
 }

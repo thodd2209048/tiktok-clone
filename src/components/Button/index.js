@@ -11,12 +11,20 @@ function Button({
   href,
   primary = false,
   outlineBlack = false,
+  outlineRed = false,
+  roundBlack = false,
   disabled = false,
   leftIcon = false,
   rightIcon = false,
   ...passprop
 }) {
-  let classBtn = cx("wrapper", { primary, outlineBlack, disabled });
+  let classBtn = cx("wrapper", {
+    primary,
+    outlineBlack,
+    outlineRed,
+    roundBlack,
+    disabled,
+  });
   let props = { to, href, onClick, ...passprop };
   let Comp = "button";
 
