@@ -1,3 +1,9 @@
+import {
+  FeedbackAndHelpIcon,
+  KeyboardIcon,
+  LanguageIcon,
+} from "~/assets/icons";
+
 const {
   faEarthAmerica,
   faQuestionCircle,
@@ -8,7 +14,7 @@ const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
 const menuItems = [
   {
     title: "English",
-    icon: <FontAwesomeIcon icon={faEarthAmerica} />,
+    icon: <LanguageIcon />,
     children: {
       title: "Language",
       data: [
@@ -25,11 +31,11 @@ const menuItems = [
   },
   {
     title: "Feedback and help",
-    icon: <FontAwesomeIcon icon={faQuestionCircle} />,
+    icon: <FeedbackAndHelpIcon />,
   },
   {
     title: "Keyboard shortcuts",
-    icon: <FontAwesomeIcon icon={faKeyboard} />,
+    icon: <KeyboardIcon />,
   },
 ];
 
