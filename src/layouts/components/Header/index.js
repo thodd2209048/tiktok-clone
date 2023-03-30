@@ -1,5 +1,8 @@
 import classNames from "classnames/bind";
-import Tippy from "@tippyjs/react/headless";
+import TippyHeadless from "@tippyjs/react/headless";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEllipsisVertical,
@@ -28,7 +31,7 @@ function Header() {
         <div className={cx("logo")}>
           <img src={logo} alt="Tik Tok" />
         </div>
-        <Tippy
+        <TippyHeadless
           interactive={true}
           visible={false}
           render={(attrs) => (
@@ -52,7 +55,7 @@ function Header() {
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </div>
-        </Tippy>
+        </TippyHeadless>
 
         <div className={cx("actions")}>
           <Button
@@ -64,12 +67,28 @@ function Header() {
           </Button>
           {isLogIn ? (
             <>
-              <button className={cx("icon")}>
-                <MessageIcon />
-              </button>
-              <button className={cx("icon")}>
-                <InboxIcon />
-              </button>
+              <Tippy
+                interactive={true}
+                placement="bottom"
+                arrow={true}
+                theme="dark"
+                content="Messages"
+              >
+                <button className={cx("icon")}>
+                  <MessageIcon />
+                </button>
+              </Tippy>
+              <Tippy
+                interactive={true}
+                placement="bottom"
+                arrow={true}
+                theme="dark"
+                content="Messages"
+              >
+                <button className={cx("icon")}>
+                  <InboxIcon />
+                </button>
+              </Tippy>
             </>
           ) : (
             <Button primary>Log in</Button>
