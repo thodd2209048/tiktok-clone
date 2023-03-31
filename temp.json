@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "first_name": "\u0110\u00e0o L\u00ea",
+      "last_name": "Ph\u01b0\u01a1ng Hoa",
+      "full_name": "\u0110\u00e0o L\u00ea Ph\u01b0\u01a1ng Hoa",
+      "nickname": "hoaahanassii",
+      "avatar": "https://files.fullstack.edu.vn/f8-tiktok/users/2/627394cb56d66.jpg",
+      "bio": "\u2728 1998 \u2728\nVietnam \ud83c\uddfb\ud83c\uddf3\n\u0110\u1eeaNG L\u1ea4Y VIDEO C\u1ee6A T\u00d4I \u0110I SO S\u00c1NH N\u1eeeA. XIN H\u00c3Y T\u00d4N TR\u1eccNG !",
+      "tick": true,
+      "followings_count": 1,
+      "followers_count": 57,
+      "likes_count": 1000,
+      "website_url": "https://fullstack.edu.vn/",
+      "facebook_url": "",
+      "youtube_url": "",
+      "twitter_url": "",
+      "instagram_url": "",
+      "created_at": "2022-05-05 23:10:05",
+      "updated_at": "2022-05-05 23:11:39"
+    }
+  ]
+}

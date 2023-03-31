@@ -1,25 +1,20 @@
 import classNames from "classnames/bind";
-import TippyHeadless from "@tippyjs/react/headless";
+
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEllipsisVertical,
-  faMagnifyingGlass,
-  faPlus,
-  faSpinner,
-  faXmarkCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Header.module.scss";
 import logo from "~/assets/images/logo.svg";
-import SearchItem from "./SearchItem";
+
 import Button from "~/components/Button";
-import { DropWrapper } from "~/components/DropWrapper";
+
 import Menu from "./Menu";
 import { InboxIcon, MessageIcon } from "~/assets/icons";
 import Image from "~/components/Image";
+import Search from "./Search";
 
 const cx = classNames.bind(styles);
 
@@ -31,31 +26,8 @@ function Header() {
         <div className={cx("logo")}>
           <img src={logo} alt="Tik Tok" />
         </div>
-        <TippyHeadless
-          interactive={true}
-          visible={false}
-          render={(attrs) => (
-            <div className={cx("search-result")} tabIndex="-1" {...attrs}>
-              <DropWrapper>
-                <div className={cx("search-title")}>Accounts</div>
-                <SearchItem />
-                <SearchItem />
-                <SearchItem />
-              </DropWrapper>
-            </div>
-          )}
-        >
-          <div className={cx("search")}>
-            <input placeholder="Search accounts and videos" />
-            <button className={cx("clear")}>
-              <FontAwesomeIcon icon={faXmarkCircle} />
-            </button>
-            <FontAwesomeIcon className={cx("loading")} icon={faSpinner} />
-            <button className={cx("search-btn")}>
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </button>
-          </div>
-        </TippyHeadless>
+
+        <Search />
 
         <div className={cx("actions")}>
           <Button
