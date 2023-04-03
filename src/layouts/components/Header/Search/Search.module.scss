@@ -7,12 +7,17 @@
   position: relative;
   display: flex;
   align-items: center;
-
   height: var(--search-height);
   margin: 0 8px;
   padding-left: calc(var(--search-height) / 2);
   border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: var(--font-family);
   background: rgba(22, 24, 35, 0.06);
+
+  &:focus-within {
+    border-color: grey;
+  }
 
   input {
     flex: 1;

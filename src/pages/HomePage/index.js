@@ -1,4 +1,4 @@
 function HomePage() {
-  return <div>Home Page</div>;
+  return <div style={{ height: "2000px" }}>Home Page</div>;
 }
 export default HomePage;

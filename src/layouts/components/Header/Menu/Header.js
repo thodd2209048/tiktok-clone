@@ -5,13 +5,13 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 
-function Header({ onBack }) {
+function Header({ onBack, headerTitle }) {
   return (
     <div className={cx("header")}>
       <button className={cx("back-btn")} onClick={onBack}>
         <FontAwesomeIcon icon={faAngleLeft} />
       </button>
-      <div className={cx("header-title")}>Language</div>
+      <div className={cx("header-title")}>{headerTitle}</div>
     </div>
   );
 }

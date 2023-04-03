@@ -33,6 +33,10 @@
   padding: 8px 0;
 }
 
+.menu-body {
+  overflow-y: overlay;
+}
+
 .menu-item {
   display: flex;
   align-items: center;

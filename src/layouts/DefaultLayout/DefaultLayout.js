@@ -1,18 +1,21 @@
-import styles from "./HeaderOnly.module.scss";
+import styles from "./DefaultLayout.module.scss";
 import classNames from "classnames/bind";
+
 import Header from "../components/Header/Header";
+import Sidebar from "./Sidebar";
 
 const cx = classNames.bind(styles);
 
-function HeaderOnly() {
+function DefaultLayout({ children }) {
   return (
     <div className={cx("wrapper")}>
       <Header />
       <div className={cx("container")}>
-        <div className="content"></div>
+        <Sidebar />
+        <div className="content">{children}</div>
       </div>
     </div>
   );
 }
 
-export default HeaderOnly;
+export default DefaultLayout;
