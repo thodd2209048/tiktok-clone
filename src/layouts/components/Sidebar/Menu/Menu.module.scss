@@ -1,0 +1,52 @@
+.menu {
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 48px;
+  color: var(--text-color);
+  border-radius: 4px;
+  transition: background-color ease-in-out 200ms;
+
+  &.active {
+    color: var(--primary);
+  }
+
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.icon {
+  display: block;
+}
+.activeIcon {
+  display: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-left: 8px;
+}
+.redDotContainer {
+  display: inline;
+  margin: 3px 0 0 2px;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.redDot {
+  vertical-align: top;
+}
+
+.active .icon {
+  display: none;
+}
+
+.active .activeIcon {
+  display: block;
+}

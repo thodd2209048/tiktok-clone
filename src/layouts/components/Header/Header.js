@@ -51,6 +51,7 @@ function Header() {
                   arrow={true}
                   theme="dark"
                   content="Messages"
+                  zIndex={9}
                 >
                   <button className={cx("icon")}>
                     <MessageIcon />
@@ -66,6 +67,7 @@ function Header() {
                   arrow={true}
                   theme="dark"
                   content="Messages"
+                  zIndex={9}
                 >
                   <button className={cx("icon")}>
                     <InboxIcon />

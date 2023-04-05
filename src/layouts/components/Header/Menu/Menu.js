@@ -99,6 +99,7 @@ function Menu({ children, isLogIn, hideOnClick = false }) {
         </div>
       )}
       hideOnClick={hideOnClick}
+      zIndex={8}
     >
       <div>{children}</div>
     </Tippy>

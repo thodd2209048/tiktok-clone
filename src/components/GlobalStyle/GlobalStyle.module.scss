@@ -11,6 +11,7 @@
   --primary: rgba(254, 44, 85, 1);
   --black: #000000;
   --white: #fff;
+  --text-color: #161823;
 
   --default-layout-width: 1150px;
 }
@@ -28,6 +29,7 @@ html {
 body {
   font-size: 1.6rem;
   overflow-y: overlay;
+  color: var(--text-color);
 }
 
 //Scrollbar

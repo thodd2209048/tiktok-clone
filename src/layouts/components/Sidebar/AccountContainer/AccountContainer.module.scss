@@ -1,0 +1,110 @@
+.wrapper {
+  position: relative;
+  padding: 16px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 0;
+    height: 1px;
+    background: rgba(22, 24, 35, 0.12);
+  }
+}
+
+.label {
+  padding: 0 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.account-list {
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color ease-in-out 200ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 999px;
+}
+.content {
+}
+
+.title {
+}
+
+.username {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  // margin-top: -2px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.div-user-suggest {
+}
+.check {
+  margin-left: 6px;
+}
+.desc {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+//DropWrapper
+
+.profile-container {
+  width: 320px;
+  padding: 20px;
+}
+.profile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.profile-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+}
+.profile-title {
+  font-size: 1.8rem;
+}
+.profile-desc {
+  font-size: 1.4rem;
+}
+.profile-status {
+  margin-top: 8px;
+}
+
+.profile-stat + .profile-stat-desc {
+  margin-left: 6px;
+}
+
+.profile-stat-desc + .profile-stat {
+  margin-left: 12px;
+}

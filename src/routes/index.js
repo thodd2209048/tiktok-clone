@@ -6,6 +6,8 @@ import {
   ProfilePage,
   SearchPage,
   UploadPage,
+  ExplorePage,
+  LivePage,
 } from "~/pages";
 
 //public routes
@@ -15,6 +17,8 @@ const publicRoutes = [
   { path: config.routes.upload, element: UploadPage, layout: HeaderOnly },
   { path: config.routes.search, element: SearchPage, layout: null },
   { path: config.routes.profile, element: ProfilePage },
+  { path: config.routes.explore, element: ExplorePage },
+  { path: config.routes.live, element: LivePage },
 ];
 
 //private routes
